@@ -18,10 +18,6 @@ server.listen(3000, function(){
   console.log('listening on *:3000');
 });
 
-app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html');
-});
-
 io.on('connection', function(socket) {
   //miejsce dla funkcji, które zostaną wykonane po podłączeniu klienta
   // klient nasłuchuje na wiadomość wejścia do czatu
@@ -51,8 +47,4 @@ io.on('connection', function(socket) {
       from: name
     });
   });
-});
-
-server.listen(3000, function(){
-  console.log('listening on *:3000');
 });

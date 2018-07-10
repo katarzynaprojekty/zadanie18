@@ -1,59 +1,67 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-const OptimizeJsPlugin = require('optimize-js-plugin');
+let HtmlWebpackPlugin = require('html-webpack-plugin');
+let OptimizeJsPlugin = require('optimize-js-plugin');
+let UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
-const plugins = [
-    new HtmlWebpackPlugin({
-        template: 'src/index.html',
+let env = process.env.NODE_ENV || 'development';
+
+let plugins =
+    [new HtmlWebpackPlugin({
+        template: 'client/index.html',
         filename: 'index.html',
-        inject: 'body',
-})];
+        inject: 'body'
+      })
+    ];
 
-module.exports = (env) => {
+  module.exports = (env) => {
     const environment = env || 'production';
     if (env === 'production') {
-        plugins.push(
+      plugins.push(
+            
             new OptimizeJsPlugin({
-                sourceMap: false
+                    sourceMap: false
             })
         )
     }
+    console.log("wartość env:");
+    console.log(env);
     return {
-        mode: environment,
-        entry: (env !== 'production' ? [
+        // entry: (env !== 'production' ? [
+        //     'react-hot-loader/patch',
+        //     'webpack-dev-server/client?http://localhost:8080',
+        //     'webpack/hot/only-dev-server',
+        // ] : []).concat(['./client/index.js']),
+        entry:  [
             'react-hot-loader/patch',
-            'webpack-dev-server/client?http://localhost:8080',
-            'webpack/hot/only-dev-server',
-        ] : []).concat(['./client/index.js']),
+            './client/index.js'
+        ],
         output: {
-            filename: './bundle.js',
-            path: path.resolve(__dirname, 'public'),
+                filename: './bundle.js',
+                path: path.resolve(__dirname, 'public'),
         },
-        optimization: {
-            minimize: false
-        },
-        plugins: plugins,
         module: {
-            rules: [
+                rules: [
+                    {
+                        test: /\.js$/,
+                        loader: "babel-loader",
+                        // options: {
+                        //     plugins: env !== 'production' ? ["react-hot-loader/babel"] : []
+                        // }
+                    },
                 {
-                    test: /\.js$/,
-                    loader: "babel-loader",
-                    options: {
-                        plugins: env !== 'production' ? ["react-hot-loader/babel"] : []
-                    }
+                  test: /\.css$/,
+                  use: [
+                      {loader: 'style-loader'},
+                      {
+                        loader: 'css-loader',
+                        options: {
+                          modules: true
+                        }
+                      }
+                  ]
                 },
-                {
-                    test: /\.css$/,
-                    use:[
-                            { loader: 'style-loader'},
-                            {
-                                loader: 'css-loader',
-                                options: { modules: true}
-                            }
-                        ]
-                }
             ]
-        }
+        },
+        plugins: plugins
     }
-};
+  };
