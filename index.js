@@ -14,9 +14,6 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
 
-server.listen(3000, function(){
-  console.log('listening on *:3000');
-});
 
 io.on('connection', function(socket) {
   //miejsce dla funkcji, które zostaną wykonane po podłączeniu klienta
@@ -47,4 +44,8 @@ io.on('connection', function(socket) {
       from: name
     });
   });
+});
+
+server.listen(3000, function(){
+  console.log('listening on *:3000');
 });

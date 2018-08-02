@@ -6,3 +6,13 @@
     width: 75vw;
     padding: 20px;
 }
+
+.Message {
+	background-color: #acacdf;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	margin-bottom: 10px;
+	padding: 10px;
+	word-break: break-all;
+}
