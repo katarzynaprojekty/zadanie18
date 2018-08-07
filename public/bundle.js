@@ -20784,10 +20784,10 @@ if(false) {
 
 exports = module.exports = __webpack_require__(7)(false);
 // imports
-
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Quicksand);", ""]);
 
 // module
-exports.push([module.i, "body {\n    margin: 0;\n}\n\n._3HtT6GDZDXMjHHfhWbFwsK {\n    display: flex;\n    flex-direction: column;\n    flex: 1;\n    height: 100vh;\n}\n\n._llPSW5iWAXYliq7g-hel {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    border-bottom: 1px solid #ccc;\n}\n\n._1tPWRuM3cHxgEU3qrRkHhf {\n    display: flex;\n    width: 25vw;\n    border-right: 1px solid #ccc;\n    justify-content: center;\n    box-sizing: border-box;\n    padding: 20px;\n}\n\n._3MMUFcgGDSdP1d0FlbFIdO {\n    display: flex;\n    width: 75vw;\n    justify-content: center;\n    box-sizing: border-box;\n    padding: 20px;\n}\n\n._1Xm1lSJwOROAwGzk130swu {\n    display: flex;\n    flex-direction: row;\n    flex: 1;\n}\n\n._1dVqIOiBK1eT6KrIm6Hnyo {\n    display: flex;\n    flex-direction: column;\n    width: 75vw;\n    flex: 1;\n}", ""]);
+exports.push([module.i, "* {\n    box-sizing: border-box;\n    font-family: 'Quicksand', sans-serif;\n}\n\nbody {\n    margin: 0;\n    padding: 0;\n    font-size: 20px;\n}\n\n._3HtT6GDZDXMjHHfhWbFwsK {\n    display: flex;\n    flex-direction: column;\n    flex: 1;\n    height: 100vh;\n    overflow: hidden;\n}\n\n._llPSW5iWAXYliq7g-hel {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    border-bottom: 1px solid #fff;\n}\n\n._1tPWRuM3cHxgEU3qrRkHhf {\n    background-color: rgb(81, 75, 156);\n    border-right: 1px solid #000;\n    color: #fff;\n    display: flex;\n    font-weight: bold;\n    justify-content: center;\n    padding: 20px;\n    width: 25vw;\n}\n\n._3MMUFcgGDSdP1d0FlbFIdO {\n    display: flex;\n    width: 75vw;\n    justify-content: center;\n    box-sizing: border-box;\n    padding: 20px;\n    background-color: #babad6;\n    font-weight: bold;\n}\n\n._1Xm1lSJwOROAwGzk130swu {\n    display: flex;\n    flex-direction: row;\n    flex: 1;\n}\n\n._1dVqIOiBK1eT6KrIm6Hnyo {\n    display: flex;\n    flex-direction: column;\n    width: 75vw;\n    flex: 1;\n}", ""]);
 
 // exports
 exports.locals = {
@@ -21033,7 +21033,7 @@ exports = module.exports = __webpack_require__(7)(false);
 
 
 // module
-exports.push([module.i, "._1jMi-csxQtX0aGs1vYDoVW {\n    display: flex;\n    flex-direction: row;\n}\n\n._2CwExyCf7HbiY7VMTFtGOz {\n    flex: 1;\n    padding: 20px;\n    border: 0;\n    border-top: 1px solid #ccc;\n}", ""]);
+exports.push([module.i, "._1jMi-csxQtX0aGs1vYDoVW {\n    display: flex;\n    flex-direction: row;\n}\n\n._2CwExyCf7HbiY7VMTFtGOz {\n    flex: 1;\n    padding: 20px;\n    border: 0;\n    border-top: 1px solid #ccc;\n    background-color: rgb(216, 214, 245);\n    border: 1px solid rgb(81, 75, 156);\n}", ""]);
 
 // exports
 exports.locals = {
@@ -21146,7 +21146,7 @@ exports = module.exports = __webpack_require__(7)(false);
 
 
 // module
-exports.push([module.i, "._2UvbzmgCLZxth5pRT2XhDs {\n    flex: 1;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    width: 75vw;\n    padding: 20px;\n}\n\n._3iroW4vpGbyW7KQKonHDAM {\n\tbackground-color: #c0c0e0;\n\tborder: 1px solid #ccc;\n\tborder-radius: 5px;\n\tfont-size: 16px;\n\tmargin-bottom: 10px;\n\tpadding: 10px;\n\tword-break: break-all;\n}", ""]);
+exports.push([module.i, "._2UvbzmgCLZxth5pRT2XhDs {\n    flex: 1;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    width: 75vw;\n    padding: 20px;\n}\n\n._3iroW4vpGbyW7KQKonHDAM {\n\tbackground-color: #acacdf;\n\tborder: 1px solid #ccc;\n\tborder-radius: 5px;\n\tfont-size: 16px;\n\tmargin-bottom: 10px;\n\tpadding: 10px;\n\tword-break: break-all;\n}", ""]);
 
 // exports
 exports.locals = {
@@ -21394,7 +21394,7 @@ exports = module.exports = __webpack_require__(7)(false);
 
 
 // module
-exports.push([module.i, "._2paQGz9IZpfMwzHu4k5HeL {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: 100vw;\n    height: 100vh;\n}\n\n._37u6J9ZrBigjkeSnmF2fyE {\n    padding: 20px;\n    font-size: 2em;\n    border: 0;\n    border-bottom: 1px solid #ccc;\n    width: 510px;\n    text-align: center;\n}", ""]);
+exports.push([module.i, "._2paQGz9IZpfMwzHu4k5HeL {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: 100vw;\n    height: 100vh;\n}\n\n._37u6J9ZrBigjkeSnmF2fyE {\n    padding: 20px;\n    font-size: 2em;\n    border: 0;\n    border-bottom: 1px solid #ccc;\n    width: 510px;\n    text-align: center;\n    background-color: #b0b8d1;\n    color: white\n}", ""]);
 
 // exports
 exports.locals = {
